@@ -1,5 +1,14 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Cookie', cursive;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -8,6 +17,8 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
+
 }
 
 header {
@@ -18,6 +29,8 @@ header {
     h1 {
         padding-top: 50px;
         font-variant: small-caps;
+        font-family: var(--fonte2);
+        font-size: 4em;
     }
 
     p {
@@ -39,7 +52,10 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height: 2em;
+    line-height: 1.5em;
+    font-family: var(--fonte3);
+    font-size: clamp(1.5em, 5vw, 3em);
+    font-weight: lighter;
 
     &.normal {
         background-color: white;
@@ -52,7 +68,8 @@ section {
 
         p {
             background-color: rgba(0, 0, 0, 0.26);
-            width: 400px;
+            display: inline-block;
+            padding: 10px;
         }
     }
 }
