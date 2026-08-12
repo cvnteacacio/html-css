@@ -7,12 +7,24 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+
+            p {
+                text-align: justify;
+            }
         }
         
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
+            caption {
+                background-color: lightgrey;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+
             td, th {
                 border: 1px solid black;
                 padding: 10px;
@@ -28,6 +40,21 @@
                 }
             }
 
+            tbody > tr:nth-child(2n) {
+                /*
+                'odd' é ÍMPAR;
+                'even' é PAR;
+                Também pode usar '2n - 1, por exemplo;
+                '*/
+                background-color: lightblue;
+            }
+
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: gray;
+            }
+
         }
     </style>
 </head>
@@ -36,6 +63,7 @@
     <!-- 
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION (Legenda da Tabela)
         THEAD
             TR, TD, TH
         TBODY
@@ -44,10 +72,13 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População Nacional por Estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col"
+                style="width: 100px;">
+                População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +193,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, distinctio quos alias libero sapiente temporibus sed rerum harum voluptatibus. Repudiandae quis sapiente, consequuntur maiores ex eaque veniam. Eos, maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum incidunt sequi, dolorem, et at rerum officia explicabo blanditiis dignissimos, laborum velit odio quam odit optio eaque. Sit, aperiam dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam quo ipsum incidunt, repellat voluptatem esse quibusdam maxime nisi dignissimos totam temporibus consequuntur laudantium vero earum commodi autem deleniti necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam, non accusantium debitis cumque reprehenderit perferendis omnis officia assumenda modi voluptates corrupti sunt suscipit quae, esse, a laborum qui. Fugit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolore debitis incidunt ex sapiente illum? Deserunt, eveniet corporis error illo alias architecto obcaecati tempora. Possimus fugiat in rem amet porro.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, distinctio quos alias libero sapiente temporibus sed rerum harum voluptatibus. Repudiandae quis sapiente, consequuntur maiores ex eaque veniam. Eos, maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum incidunt sequi, dolorem, et at rerum officia explicabo blanditiis dignissimos, laborum velit odio quam odit optio eaque. Sit, aperiam dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam quo ipsum incidunt, repellat voluptatem esse quibusdam maxime nisi dignissimos totam temporibus consequuntur laudantium vero earum commodi autem deleniti necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam, non accusantium debitis cumque reprehenderit perferendis omnis officia assumenda modi voluptates corrupti sunt suscipit quae, esse, a laborum qui. Fugit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolore debitis incidunt ex sapiente illum? Deserunt, eveniet corporis error illo alias architecto obcaecati tempora. Possimus fugiat in rem amet porro.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, distinctio quos alias libero sapiente temporibus sed rerum harum voluptatibus. Repudiandae quis sapiente, consequuntur maiores ex eaque veniam. Eos, maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cum incidunt sequi, dolorem, et at rerum officia explicabo blanditiis dignissimos, laborum velit odio quam odit optio eaque. Sit, aperiam dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam quo ipsum incidunt, repellat voluptatem esse quibusdam maxime nisi dignissimos totam temporibus consequuntur laudantium vero earum commodi autem deleniti necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam, non accusantium debitis cumque reprehenderit perferendis omnis officia assumenda modi voluptates corrupti sunt suscipit quae, esse, a laborum qui. Fugit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolore debitis incidunt ex sapiente illum? Deserunt, eveniet corporis error illo alias architecto obcaecati tempora. Possimus fugiat in rem amet porro.</p>
 </body>
 </html>
