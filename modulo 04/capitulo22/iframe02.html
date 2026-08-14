@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            iframe {
+                width: 500px;
+                aspect-ratio: 16/9;
+                display: block;
+                /* Para iframe ser centralizado, precisa ser transformado. */
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, commodi? Recusandae quaerat architecto explicabo dicta inventore modi officiis sint nam quo veniam accusantium, deserunt sit minima repudiandae nisi nesciunt. Quos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia libero accusamus reprehenderit maxime excepturi ullam quis officia qui consequuntur et id aliquid omnis distinctio, exercitationem necessitatibus ipsum deserunt odio saepe?</p>
+    <!-- Posso criar páginas internas com conteúdo próprio ao invés de criar conteúdo dentro do mesmo documento. A vantagem é que você pode fazer configrações de páginas e estilos totalmente separadas do seu documento principal. Caso contrário, o seu anexo pode ser feito dentro da mesma página com <div>. -->
+    <iframe
+    src="Paginas Extras/pag001.html"
+    frameborder="0">
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum quos rem aliquam magnam praesentium! Nihil, ratione ducimus eveniet rem debitis atque, delectus, quo qui error cum dolore quos iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa numquam veritatis tenetur, tempora distinctio facere asperiores ab pariatur aspernatur? Earum, velit fugiat aperiam cum odit quas voluptatibus debitis eaque?</p>
+</body>
+</html>
